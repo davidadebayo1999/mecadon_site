@@ -89,6 +89,24 @@ class PagesController extends AppController
 
     }
 
+    public function Product_details(){
+        $id=$this->request->param('id');
+        $this->loadModel('MainCategories');
+        $this->loadModel('SubCategories');
+        $this->loadModel('Products');
+
+        $product=$this->Products->get($id,[
+            'contain' => ['Images']
+        ]);
+        $this->set('product',$product);
+
+        $product_list=$this->Products->find('all',['contain'=>['Images']])
+                        ->where(['sub_category_id'=>$product->sub_category_id]);
+                        // ->contain(['Photos']);
+
+        $this->set('product_list',$product_list);
+    }
+
     public function productDetails(){
         $id=$this->request->param('id');
         $this->loadModel('MainCategories');

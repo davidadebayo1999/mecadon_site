@@ -84,14 +84,20 @@
               </div>
               <!-- section-titile-end -->
             </div>
+            
             <div class="product-active-3">
+
+            <?php 
+                                        foreach($products as $p){ ?>
+
               <div class="col-lg-12">
                 <!-- product-wrapper-start -->
                 <div class="product-wrapper text-center">
                   <div class="product-img">
-                    <a href="#">
-                      <img src="img/product/5.jpg" alt="phone" />
-                    </a>
+                	<a href="/product_details/<?= $p->id?>">
+														<img src="<?= $url.'/files/Images/name/'.$p->images[0]->name?>" alt="phone"
+                                                         class="img img-responsive"  style="height:250px"/>
+													</a>
                     <span>new</span>
                     <div class="product-icon">
                       <ul>
@@ -100,133 +106,33 @@
                     </div>
                   </div>
                   <div class="product-content">
-                    <span>Furniture & Tables</span>
-                    <h4><a href="#">Aenean acest ac metus varius</a></h4>
+                  <span><?= $p->sub_category->categoryname?></span>
+                  <h4><a href="/product_details/<?= $p->id?>"><?= $p->name ?></a></h4>
                     <div class="rating">
                       <ul>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                      <?php  
+                      for($index=0;$index<$p->rating;$index++){ ?>
+                      <li><a ><i class="fa fa-star"></i></a></li>
+
+                     <?php }
+                  ?>
                       </ul>
                     </div>
                     <div class="price">
                       <ul>
-                        <li class="new-price">$220</li>
-                        <li class="old-price">$260</li>
+                      <li class="new-price">$<?= $p->price ?></li>
+                      <li class="old-price"><?= $p->price+25 ?></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <!-- product-wrapper-end -->
               </div>
-              <div class="col-lg-12">
-                <!-- product-wrapper-start -->
-                <div class="product-wrapper text-center">
-                  <div class="product-img">
-                    <a href="#">
-                      <img src="img/product/6.jpg" alt="phone" />
-                    </a>
-                    <div class="product-icon">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <span>Mobiles & Accesosaries</span>
-                    <h4><a href="#">vehicula  tincidunt suscipit </a></h4>
-                    <div class="rating">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="price">
-                      <ul>
-                        <li class="new-price">$250</li>
-                        <li class="old-price">$260</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- product-wrapper-end -->
-              </div>
-              <div class="col-lg-12">
-                <!-- product-wrapper-start -->
-                <div class="product-wrapper text-center">
-                  <div class="product-img">
-                    <a href="#">
-                      <img src="img/product/7.jpg" alt="phone" />
-                    </a>
-                    <span>new</span>
-                    <div class="product-icon">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <span>Furniture & Tables</span>
-                    <h4><a href="#">Aenean acest ac metus varius</a></h4>
-                    <div class="rating">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="price">
-                      <ul>
-                        <li class="new-price">$220</li>
-                        <li class="old-price">$260</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- product-wrapper-end -->
-              </div>
-              <div class="col-lg-12">
-                <!-- product-wrapper-start -->
-                <div class="product-wrapper text-center">
-                  <div class="product-img">
-                    <a href="#">
-                      <img src="img/product/8.jpg" alt="phone" />
-                    </a>
-                    <div class="product-icon">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="product-content">
-                    <span>Mobiles & Accesosaries</span>
-                    <h4><a href="#">vehicula  tincidunt suscipit </a></h4>
-                    <div class="rating">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="price">
-                      <ul>
-                        <li class="new-price">$250</li>
-                        <li class="old-price">$260</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- product-wrapper-end -->
-              </div>
+
+              <?php }
+                                    
+                                    ?>
+          
             </div>
           </div>
         </div>

@@ -53,8 +53,14 @@ class AppController extends Controller
         ]);
         $this->set('cats',$cats);
 
-        // $this->set('url','http://admin.mecadongolf.com/');
-        $this->set('url','http://localhost:8765');
+        $productList =  TableRegistry::get('Products');
+        $products=$productList->find('all',[
+            'contain'=>['Images','SubCategories']
+        ]);
+        $this->set('products',$products);
+
+        //$this->set('url','http://admin.mecadongolf.com/');
+         $this->set('url','http://localhost:8765');
        
 
 
