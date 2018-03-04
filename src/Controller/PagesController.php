@@ -71,7 +71,7 @@ class PagesController extends AppController
    
 
     public function login(){
-
+     
     }
 
     public function about(){

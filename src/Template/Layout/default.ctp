@@ -52,11 +52,7 @@ $this->layout = false;
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-		<!-- preloader-start -->
-		<div id="preloader"></div>
-		<!-- preloader-end -->
-		<!-- header-start -->
+      
 		<header>
 			<!-- header-top-area-start -->
 			<div class="header-top-area hidden-xs">
@@ -93,7 +89,7 @@ $this->layout = false;
 							<!-- logo-area-start -->
 							<div class="logo-area">
 								<a href="/">
-                                <?= $this->Html->image('../images/logo.jpg',['style'=>'width:150px'], ['fullBase' => true]); ?>
+                                <?= $this->Html->image('../images/logo10.png',['style'=>'width:100px'], ['fullBase' => true]); ?>
                                </a>
 							</div>
 							<!-- logo-area-end -->
@@ -102,7 +98,7 @@ $this->layout = false;
 							<!-- search-area-start -->
 							<div class="search-area">
 								<form action="#">
-									<input type="text" placeholder="Seatce entire store here" />
+									<input type="text" placeholder="Search entire store here" />
 									<select id="sorter" class="header-option hidden-xs" data-role="sorter">
 										<option value="Categories " selected="selected">All Categories</option>
                                         <?php
@@ -191,53 +187,15 @@ $this->layout = false;
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<!-- single-footer-start -->
-							<div class="single-footer mb-4">
-								<div class="footer-title">
-									<h2>About Us<i class="fa fa-long-arrow-right"></i></h2>
-								</div>
-								<div class="single-content">
-									<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed </p>
-									<form action="#">
-										<input type="text" placeholder="Enter your email"/>
-										<a href="#"><i class="fa fa-paper-plane"></i></a>
-									</form>
-								</div>
-							</div>
+						
 							<!-- single-footer-end -->
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<!-- single-footer-start -->
-							<div class="single-footer mb-4">
-								<div class="footer-title">
-									<h2>Archives<i class="fa fa-long-arrow-right"></i></h2>
-								</div>
-								<div class="single-content">
-									<ul>
-										<li><a href="#"><i class="fa fa-check-square"></i>June 2016</a></li>
-										<li><a href="#"><i class="fa fa-check-square"></i>May 2016</a></li>
-										<li><a href="#"><i class="fa fa-check-square"></i>April 2016</a></li>
-										<li><a href="#"><i class="fa fa-check-square"></i>March 2016</a></li>
-										<li><a href="#"><i class="fa fa-check-square"></i>February 2016</a></li>
-									</ul>
-								</div>
-							</div>
+						
 							<!-- single-footer-end -->
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<!-- single-footer-start -->
-							<div class="single-footer">
-								<div class="footer-title">
-									<h2>Twitter<i class="fa fa-long-arrow-right"></i></h2>
-								</div>
-								<div class="single-content-2">
-									<ul>
-										<li><span>@engadget:</span> Google's first indie gaming festival comes to San Francisco this fall https://t.co/NsAr2gcykp2 weeks ago</li>
-										<li><span>@engadget:</span> Google's first indie gaming festival comes to San Francisco this fall https://t.co/NsAr2gcykp2 weeks ago</li>
-									</ul>
-								</div>
-							</div>
-							<!-- single-footer-end -->
+						
 						</div>
 					</div>
 				</div>
@@ -250,7 +208,7 @@ $this->layout = false;
 						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 							<!-- copy-rigth-area-start -->
 							<div class="copy-rigth-area mb-4">
-								<p>© Copyright 2018 <a href="#">- jsoft.</a> All Rights Reserved.</p>
+								<p>© Copyright 2018 <a>Mecadon Golf.</a> All Rights Reserved.</p>
 							</div>
 							<!-- copy-rigth-area-end -->
 						</div>
